@@ -50,8 +50,8 @@ Kullanıcıdan gelen mesajları karşılayarak, sadece Vector Store'dan alınan 
 - Cevaplar kısa, net ve dostane olmalıdır.
 
 ---
- 1. Rag.json – Veri Hazırlık ve Vektör Store'a Yükleme Workflow'u
-Bu workflow'un amacı: Google Drive'dan belgeleri alıp OpenAI kullanarak embed (vektör) haline getirip Pinecone Vector Store'a yüklemektir. Bu, Retrieval-Augmented Generation (RAG) sisteminin bilgi deposunu hazırlamak için kullanılır.
+##  1. Rag.json – Veri Hazırlık ve Vektör Store'a Yükleme Workflow'u
+### Bu workflow'un amacı: Google Drive'dan belgeleri alıp OpenAI kullanarak embed (vektör) haline getirip Pinecone Vector Store'a yüklemektir. Bu, Retrieval-Augmented Generation (RAG) sisteminin bilgi deposunu hazırlamak için kullanılır.
 
 
 Trigger: Manuel olarak çalıştırılır (manualTrigger).
@@ -68,8 +68,8 @@ Veri parçalama: Metin içerikleri küçük parçalara bölünür (textSplitter)
 
 Vector Store’a ekleme: Pinecone üzerinde belirtilen namespace'e (restoran) yüklenir.
 
-🤖 2. Rag2.json – Sohbet Tabanlı AI Ajan Workflow'u
-Bu workflow, kullanıcıdan gelen mesajlara yanıt veren bir Chat Agent içindir. AI, sadece Pinecone’daki verileri kullanarak (yani yukarıdaki sistemle yüklenmiş olanları) soruları yanıtlar.
+## 🤖 2. Rag2.json – Sohbet Tabanlı AI Ajan Workflow'u
+### Bu workflow, kullanıcıdan gelen mesajlara yanıt veren bir Chat Agent içindir. AI, sadece Pinecone’daki verileri kullanarak (yani yukarıdaki sistemle yüklenmiş olanları) soruları yanıtlar.
 
 Chat tetikleyici: Kullanıcı bir mesaj gönderdiğinde devreye girer.
 
